@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto Mono', monospace;
+  background-image: url("lain2.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: white;
+}
+
+.container {
+  text-align: center;
+}
+
+header {
+  margin-bottom: 2rem;
+}
+
+h1 {
+  font-size: 3rem;
+  letter-spacing: 0.1rem;
+}
+
+.search-bar {
+  padding: 1rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #51caa0;
+}
+
+.search-bar:focus {
+  outline: none;
+  border-color: #ccc;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.search-btn {
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  background-color: #fff;
+  color: black;
+  transition: background-color 0.3s ease;
+}
+
+.search-btn:hover {
+  background-color: #ddd;
+}
