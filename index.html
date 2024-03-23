@@ -12,31 +12,31 @@
   </script>
 </head>
 <body>
+
+  <button class="background-switch">
+    <span>&lt;</span>
+  </button>
+
   <div class="container">
-    <header>
-      <h1>Let's All Search The Web</h1>
-    </header>
     <main>
-      <form action="https://duckduckgo.com/" method="get" target="_blank">
-        <input type="text" name="q" class="search-bar" placeholder="Search DuckDuckGo">
-        <button type="submit" class="search-btn">Go_DDG</button>
-      </form>
-      
-      <style>
-        .search-bar {
-          /* Set the desired width here */
-          width: 200px;  /* Adjust as needed */
-          margin-bottom: 6px;  /* Add spacing after each bar */
-        }
-
-        .search-btn {
-          /* Set the same width as the search bar */
-          width: 200px;  /* Adjust as needed */
-        }
-
-
-      </style>
+   <form action="https://www.google.com/search" method="get" target="_blank">
+   <input type="text" name="q" class="search-bar" placeholder="Search Google">
+   <button type="submit" class="search-btn">GG</button>
+    </form>
     </main>
   </div>
+  <script>
+    const backgroundSwitchBtn = document.querySelector('.background-switch');
+    const body = document.querySelector('body');
+
+    let currentImageIndex = 0;
+    const backgroundImages = ["lain2.jpg", "evangelion.jpg", "evangelion2.jpg", "wp.jpg", "wp2.jpg"]; // Replace with your other image names
+
+    backgroundSwitchBtn.addEventListener('click', () => {
+      currentImageIndex = (currentImageIndex + 1) % backgroundImages.length;
+      const newBackgroundImage = backgroundImages[currentImageIndex];
+      body.style.backgroundImage = `url("${newBackgroundImage}")`;
+    });
+  </script>
 </body>
 </html>
