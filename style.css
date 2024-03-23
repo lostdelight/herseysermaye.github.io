@@ -9,7 +9,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  color: white;
+  color: #f66151;
 }
 
 .container {
@@ -30,14 +30,14 @@ h1 {
   border: none;
   border-radius: 5px;
   font-size: 1.2rem;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: #000;
   color: #51caa0;
 }
 
 .search-bar:focus {
   outline: none;
   border-color: #ccc;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #000aa;
 }
 
 .search-btn {
@@ -46,11 +46,28 @@ h1 {
   border-radius: 5px;
   font-size: 1.2rem;
   cursor: pointer;
-  background-color: #fff;
-  color: black;
+  background-color: #000;
+  color: white;
   transition: background-color 0.3s ease;
 }
 
 .search-btn:hover {
   background-color: #ddd;
+}
+
+.background-switch {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.background-switch:hover {
+  background-color: rgba(0, 0, 0, 0.7);
 }
